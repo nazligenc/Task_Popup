@@ -16,11 +16,11 @@ Bu proje Laravel tabanlı basit bir popup form uygulamasıdır.
 
 - **Controller:**  
   `app/Http/Controllers/ContactController.php`  
-  → Form verilerini işleyen kontrolör.
+  →  Formdan gelen verileri alır, doğrular ve işler.
 
 - **Route:**  
   `routes/web.php`  
-  → Uygulamanın rotaları burada yönetiliyor.
+  → URL isteklerini ilgili görünüm ve işleyiciye yönlendirir.
 
 ---
 
@@ -47,6 +47,4 @@ Bu proje Laravel tabanlı basit bir popup form uygulamasıdır.
 
 - Veritabanı kullanılmamaktadır, oturum dosya tabanlı olarak yönetilmektedir (`SESSION_DRIVER=file`).
 
----
 
-İyi çalışmalar!  
