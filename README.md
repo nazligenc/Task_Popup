@@ -1,6 +1,10 @@
 # Proje Hakkında
 
-Bu proje Laravel tabanlı basit bir popup form uygulamasıdır.
+<small>Bu proje Laravel tabanlı basit bir popup form uygulamasıdır.</small>
+
+---
+## Proje Görseli
+![image](https://github.com/user-attachments/assets/176dcbbf-354e-46be-8e1b-df64353d068f)
 
 ---
 
