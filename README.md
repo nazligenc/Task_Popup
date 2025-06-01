@@ -17,14 +17,19 @@
 - **CSS:**  
   `public/css/popup.css`  
   → Popup için özel stiller burada tanımlı.
+  
+- **JavaScript:**  
+  `public/js/popup.js`  
+ → Popup'un açılıp kapanma davranışı, form doğrulamaları ve kullanıcı onay kontrolü gibi etkileşimler burada yönetiliyor.
 
 - **Controller:**  
   `app/Http/Controllers/ContactController.php`  
-  →  Formdan gelen verileri alır, doğrular ve işler.
+  → Formdan gelen verileri alır, doğrular ve işler.
 
 - **Route:**  
   `routes/web.php`  
   → URL isteklerini ilgili görünüm ve işleyiciye yönlendirir.
+
 
 ---
 
