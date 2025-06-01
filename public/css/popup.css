@@ -1,0 +1,232 @@
+.back {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+}
+
+
+.modal-body {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    border-radius:40px;
+    max-width: 700px;
+    max-height: 90vh;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.cancelbtn{
+    position: absolute;
+    top:10px;
+    right:20px;
+    font-size:15px;
+    background-color:transparent;
+}
+
+.container-fluid{
+    width: 100%;
+    padding-bottom: 1rem;
+}
+.row-1{
+    padding: 1rem;
+    text-align: center;
+
+}
+
+.header{
+    font-family:"Varela Round", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size:25px;
+    color: #333;
+    font-weight: bold;
+
+
+}
+.info{
+    color: rgba(0, 0, 0, 0.4);
+    font-size:15px;
+
+}
+.row-2{
+    padding: 1rem;
+
+}
+.col{
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    height: auto;
+
+}
+.row{
+    width:100%;
+    height:100%;
+    max-height:800px;
+
+}
+.card {
+    width: 100%;
+    max-width: 300px;
+    transition: all 0.4s ease-in-out;
+    border: 2px solid transparent;
+    border-radius: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+@media (max-width: 576px) {
+    .modal-body {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    .header {
+        font-size: 20px; /* Adjust header size */
+    }
+
+    .info {
+        font-size: 14px; /* Adjust info text size */
+    }
+}
+
+.card:hover {
+    border-color: rgb(247, 143, 24);
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+.card-body{
+    background-color: whitesmoke;
+
+}
+
+.container{
+    width:100%;
+    height:100%;
+
+}
+.row-3{
+    margin-top:10px;
+    background-color:#e0e0e0;
+    padding: 1rem;
+    border-radius: 20px;
+    font-family:"Varela Round", Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+}
+.title{
+    text-align:center;
+    font-size:15px;
+    font-weight: bold;
+}
+.form-group{
+    font-size:15px;
+
+}
+.card-title{
+    font-weight:bold;
+}
+.card-text{
+    font-size:13px;
+}
+.card:hover .card-icon {
+    transform: scale(1.05) rotate(20deg);
+    transition: transform 0.3s ease-in-out;
+}
+#callbtn {
+    background-color: rgb(247, 143, 24);
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top:10px;
+    width:100%;
+}
+
+#callbtn:hover {
+    background-color: rgb(230, 126, 20);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(15deg); }
+    40% { transform: rotate(-15deg); }
+    60% { transform: rotate(10deg); }
+    80% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.shake {
+    display: inline-block;
+    animation: shake 2s infinite ease-in-out;
+}
+::placeholder {
+    color: #6c757d !important;
+    opacity: 1;
+}
+.form-control:hover{
+    border-color: rgb(230, 126, 20)
+}
+.form-control:focus {
+    border-color: rgb(230, 126, 20) !important;
+    box-shadow: 0 0 0 0.2rem rgba(230, 126, 20, 0.25) !important;
+    outline: none !important;
+}
+.form-container {
+    position: relative;
+    max-height: 90vh;
+    overflow: hidden;
+}
+
+.confirm-section {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    margin-top: 0;
+}
+
+.confirm-section.show {
+    max-height: 100px;
+    opacity: 1;
+    margin-top: 10px;
+}
+
+
+
+@media (max-width: 576px) {
+    .confirm-section label {
+        font-size: 14px;
+    }
+    .confirm-section input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    input.form-control {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+    button#callbtn {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
